@@ -2,7 +2,7 @@ description: Report the status of a job to MS Teams
 usage:
   version: 2.1
   orbs:
-    ms-teams-notifier: laymui/ms-teams-notifier@1.0.0
+    ms-teams-notifier: laymui/circleci-ms-teams-notifier-with-browserstack-url@1.0.0
   jobs:
     build:
       executor: docker
@@ -12,3 +12,4 @@ usage:
         - ms-teams-notifier/report:
             only_on_fail: true
             webhook_url: $MS_TEAMS_WEBHOOK_URL
+            browserstack_url: $PUBLIC_URL_TO_BROWSERSTACK

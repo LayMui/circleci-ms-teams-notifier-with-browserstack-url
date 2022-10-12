@@ -2,7 +2,7 @@ version: 2.1
 
 orbs:
   # Replace this with your own!
-  ms-teams-notifier: laymui/ms-teams-notifier-with-browserstack-url@<<pipeline.parameters.dev-orb-version>>
+  ms-teams-notifier: laymui/circleci-ms-teams-notifier-with-browserstack-url@<<pipeline.parameters.dev-orb-version>>
   orb-tools: circleci/orb-tools@10.0
   bats: circleci/bats@1.0
   shellcheck: circleci/shellcheck@2.0
@@ -20,7 +20,7 @@ parameters:
       This value is automatically adjusted by the "trigger-integration-tests-workflow" job to correspond with the specific version created by the commit and should not be edited.
       A "dev:alpha" version must exist for the initial pipeline run.
     type: string
-    default: "0.0.1"
+    default: "dev:alpha"
 
 workflows:
   # Prior to producing a development orb (which requires credentials) basic validation, linting, and even unit testing can be performed.
@@ -48,7 +48,7 @@ workflows:
 #            - shellcheck/check
       # Publish development version(s) of the orb.
       - orb-tools/publish-dev:
-          orb-name: laymui/ms-teams-notifier-with-browserstack-url
+          orb-name: laymui/circleci-ms-teams-notifier-with-browserstack-url
           context: orb-publishing # A restricted context containing your private publishing credentials. Will only execute if approved by an authorized user.
           requires: [hold-for-dev-publish]
       # Trigger an integration workflow to test the
@@ -74,7 +74,7 @@ workflows:
       # be skipped.
       # e.g. [semver:patch] will cause a patch version to be published.
       - orb-tools/dev-promote-prod-from-commit-subject:
-          orb-name: laymui/ms-teams-notifier-with-browserstack-url
+          orb-name: laymui/circleci-ms-teams-notifier-with-browserstack-url
           context: orb-publishing
           add-pr-comment: false
           fail-if-semver-not-indicated: true

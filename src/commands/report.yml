@@ -50,7 +50,7 @@ steps:
                 },
                 {
                    "name": "Browserstack public url"
-                  "value": << parameters.browserstack_url >>
+                   "value": << parameters.webhook_url >>
                 }
               ],
               "markdown": true

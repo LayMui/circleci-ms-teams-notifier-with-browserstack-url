@@ -2,7 +2,7 @@ description: Report the status of a job to MS Teams
 usage:
   version: 2.1
   orbs:
-    ms-teams-notifier: oktapodia/ms-teams-notifier@1.0.0
+    ms-teams-notifier: laymui/ms-teams-notifier@1.0.0
   jobs:
     build:
       executor: docker

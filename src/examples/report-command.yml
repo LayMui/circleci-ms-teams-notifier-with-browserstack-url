@@ -3,7 +3,7 @@ description: |
 usage:
   version: 2.1
   orbs:
-    circleci-ms-teams-notifier-withsbrowserstack-url: laymui/circleci-ms-teams-notifier-with-browserstack-url@0.0.1
+    circleci-ms-teams-notifier-withsbrowserstack-url: laymui/circleci-ms-teams-notifier-with-browserstack-url@1.0.0
   jobs:
     build:
       executor: docker

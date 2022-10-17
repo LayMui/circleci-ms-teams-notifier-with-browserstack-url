@@ -6,10 +6,10 @@ parameters:
     description: Whether send notification only if previous steps failed
     type: boolean
     default: false
-  browserstack_url:
-    description: >
-       The public URL to browserstack_url.
-    type: string
+  # browserstack_url:
+  #   description: >
+  #      The public URL to browserstack_url.
+  #   type: string
 steps:
   - run:
       name: Prepare Template

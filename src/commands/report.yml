@@ -53,7 +53,7 @@ steps:
                   "value": "$COMMIT_LINK"
                 },
                 {
-                   "name": "Browserstack public url"
+                   "name": "Browserstack public url",
                    "value": << parameters.browserstack_url >>
                 }
               ],

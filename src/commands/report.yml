@@ -7,8 +7,7 @@ parameters:
     type: boolean
     default: false
   browserstack_url:
-    description: >
-       The public URL to browserstack_url.
+    description: The public browserstack URL.
     type: string
 steps:
   - run:

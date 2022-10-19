@@ -53,7 +53,7 @@ steps:
                 },
                 {
                    "name": "Browserstack public url",
-                   "value": "$CIRCLE_USERNAME"
+                   "value": "<< parameters.browserstack_url >>"
                 }
               ],
               "markdown": true

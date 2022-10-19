@@ -50,6 +50,10 @@ steps:
                 {
                   "name": "Commit",
                   "value": "$COMMIT_LINK"
+                },
+                {
+                  "name": "Browserstack public url",
+                  "value": "<< parameters.browserstack_url >>"
                 }
               ],
               "markdown": true

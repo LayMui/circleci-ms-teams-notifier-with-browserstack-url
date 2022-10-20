@@ -52,6 +52,10 @@ steps:
                   "value": "$COMMIT_LINK"
                 },
                 {
+                  "name": "Commit by",
+                  "value": "$CIRCLE_USERNAME"
+                },
+                {
                   "name": "Browserstack public url",
                   "value": "<< parameters.browserstack_url >>"
                 }

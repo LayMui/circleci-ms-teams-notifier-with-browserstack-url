@@ -53,7 +53,7 @@ steps:
                 },
                 {
                   "name": "Browserstack public url",
-                  "value": "<< parameters.browserstack_url >>"
+                  "value": ""<< parameters.browserstack_url >>""
                 }
               ],
               "markdown": true

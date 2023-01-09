@@ -5,3 +5,5 @@
 --->
 
 Heavily inspired of https://circleci.com/developer/orbs/orb/cloudradar-monitoring/ms-team with bug fixed
+
+https://circleci.com/developer/orbs/orb/laymui/circleci-ms-teams-notifier-with-browserstack-url

@@ -14,4 +14,6 @@ usage:
         - circleci-ms-teams-notifier-with-browserstack-url/report:
             only_on_fail: true
             webhook_url: $MS_TEAMS_WEBHOOK_URL
+            test_set: $TEST_SET
             browserstack_url: $PUBLIC_URL_TO_BROWSERSTACK
+            

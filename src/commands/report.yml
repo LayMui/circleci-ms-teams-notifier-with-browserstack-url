@@ -56,9 +56,13 @@ steps:
                   "value": "$CIRCLE_USERNAME"
                 },
                 {
+                  "name": "Test set",
+                  "value": "<< parameters.test_set >>"
+                }
+                {
                   "name": "Browserstack public url",
                   "value": "<< parameters.browserstack_url >>"
-                }
+                },
               ],
               "markdown": true
             }

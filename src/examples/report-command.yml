@@ -16,4 +16,3 @@ usage:
             webhook_url: $MS_TEAMS_WEBHOOK_URL
             test_set: $TEST_SET
             browserstack_url: $PUBLIC_URL_TO_BROWSERSTACK
-            

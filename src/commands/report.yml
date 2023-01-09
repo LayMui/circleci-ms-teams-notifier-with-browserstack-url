@@ -6,6 +6,9 @@ parameters:
     description: Whether send notification only if previous steps failed
     type: boolean
     default: false
+  test_set:
+    description: Test set number
+    type: string
   browserstack_url:
     description: The public browserstack URL.
     type: string

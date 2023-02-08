@@ -22,6 +22,12 @@ steps:
       command: echo << parameters.greeting >> world
 ```
 
+```
+git commit syntax:
+use [semver:major:minor:patch]
+example: git commit -m "[semver:patch] add test set parameter"
+```
+
 ## See:
  - [Orb Author Intro](https://circleci.com/docs/2.0/orb-author-intro/#section=configuration)
  - [How to author commands](https://circleci.com/docs/2.0/reusing-config/#authoring-reusable-commands)

@@ -2,6 +2,8 @@ ttps://circleci.com/gh/<organization>/<project-name>.svg?style=shield "CircleCI 
 
 --->
 
+Make sure your commit message starts with [semver:major]
+
 Heavily inspired of https://circleci.com/developer/orbs/orb/cloudradar-monitoring/ms-team with bug fixed
 # MS Teams notifier
 <!---

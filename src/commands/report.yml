@@ -63,7 +63,7 @@ steps:
                   "value": "<< parameters.test_set >>"
                 },
                 {
-                  "name": "Browserstack public url",
+                  "name": "Test result public url",
                   "value": "<< parameters.browserstack_url >>"
                 },
               ],

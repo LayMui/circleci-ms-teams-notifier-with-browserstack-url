@@ -6,11 +6,8 @@ parameters:
     description: Whether send notification only if previous steps failed
     type: boolean
     default: false
-  test_set:
-    description: Test set number
-    type: string
-  browserstack_url:
-    description: The public browserstack URL.
+  test_result_url:
+    description: The public test result URL.
     type: string
 steps:
   - run:
@@ -59,12 +56,8 @@ steps:
                   "value": "$CIRCLE_USERNAME"
                 },
                 {
-                  "name": "Test set",
-                  "value": "<< parameters.test_set >>"
-                },
-                {
                   "name": "Test result public url",
-                  "value": "<< parameters.browserstack_url >>"
+                  "value": "<< parameters.test_result_url >>"
                 },
               ],
               "markdown": true

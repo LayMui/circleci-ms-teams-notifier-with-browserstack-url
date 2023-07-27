@@ -4,7 +4,7 @@ usage:
   version: 2.1
   setup: true
   orbs:
-    circleci-ms-teams-notifier-withsbrowserstack-url: laymui/circleci-ms-teams-notifier-with-browserstack-url@1.0.0
+    circleci-ms-teams-notifier-withsbrowserstack-url: laymui/circleci-ms-teams-notifier-with-browserstack-url@6.2.7
   jobs:
     build:
       executor: docker
@@ -14,5 +14,4 @@ usage:
         - circleci-ms-teams-notifier-with-browserstack-url/report:
             only_on_fail: true
             webhook_url: $MS_TEAMS_WEBHOOK_URL
-            test_set: $TEST_SET
-            browserstack_url: $PUBLIC_URL_TO_BROWSERSTACK
+            test_result_url: $PUBLIC_URL_TO_BROWSERSTACK

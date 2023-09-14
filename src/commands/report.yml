@@ -59,8 +59,12 @@ steps:
                   "value": "$CIRCLE_USERNAME"
                 },
                 {
-                  "name": "Test result public url",
-                  "value": "<< parameters.test_result_url >>"
+                  "name": "Public url",
+                  "value": "<< parameters.public_url >>"
+                },
+                {
+                  "name": "Test report url",
+                  "value": "<< parameters.test_report_url >>"
                 },
               ],
               "markdown": true

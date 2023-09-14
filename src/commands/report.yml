@@ -6,8 +6,11 @@ parameters:
     description: Whether send notification only if previous steps failed
     type: boolean
     default: false
-  test_result_url:
-    description: The public test result URL.
+  public_url:
+    description: The public URL to browserstack.
+    type: string
+  test_report_url:
+    description: The test report URL.
     type: string
 steps:
   - run:
